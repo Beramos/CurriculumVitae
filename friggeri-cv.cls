@@ -21,7 +21,7 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
-\definecolor{green}{HTML}{C2E15F}
+\definecolor{green}{HTML}{B2E54F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
@@ -105,6 +105,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       \fontsize{14pt}{24pt}\color{header}%
       \thinfont #3%
     };
+    \node [rectangle, fill=blue, anchor=north west, minimum width=0.4\paperwidth, minimum height=4cm] (box2) at (current page.north west){};
+    \path (current page.north west) node[draw,shape=rectangle] (5cm,10cm) {Test};
   \end{tikzpicture}
   \vspace{2.5cm}
   \vspace{-2\parskip}
@@ -119,15 +121,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
-    \color{%
-      \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\else%
-        headercolor\fi%
-    } #1#2#3%
+    \color{green%
+     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
 }
@@ -182,9 +177,10 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{1.5\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+  \vspace{0.1cm}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4.8}(0.9, 4.33)
   \begin{flushright}
   \obeycr
 }{%
