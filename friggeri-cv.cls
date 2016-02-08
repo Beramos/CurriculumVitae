@@ -21,7 +21,7 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
-\definecolor{green}{HTML}{B2E54F}
+\definecolor{green}{HTML}{B2D94F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
@@ -94,10 +94,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \color{white}%
 }
 
-\newcommand{\header}[3]{%
+\newcommand{\header}[5]{%
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
+    \node [rectangle, fill=fillheader,anchor=east, minimum width=0.6\paperwidth, minimum height=4cm] (box4) at (box.east){};
+    \node [anchor=center] (name) at (box4) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
@@ -105,8 +106,14 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       \fontsize{14pt}{24pt}\color{header}%
       \thinfont #3%
     };
-    \node [rectangle, fill=blue, anchor=north west, minimum width=0.4\paperwidth, minimum height=4cm] (box2) at (current page.north west){};
-    \path (current page.north west) node[draw,shape=rectangle] (5cm,10cm) {Test};
+    \node [rectangle, anchor=north west, minimum width=0.4\paperwidth, minimum height=1.7cm] (box2) at (current page.north west){};
+    \node [rectangle, anchor=north west, minimum width=0.3\paperwidth, minimum height=2cm] (box3) at (box.west){};
+    \node [anchor=north] (CV) at (box2) {%
+      \fontsize{35pt}{72pt}\color{green}%
+      {\thinfont #4}};
+    \node [anchor=south] (CV) at (box3) {%
+      \fontsize{35pt}{72pt}\color{green}%
+      {\thinfont #5}};
   \end{tikzpicture}
   \vspace{2.5cm}
   \vspace{-2\parskip}
@@ -172,7 +179,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
+\setlength{\TPHorizModule}{0.7cm}
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
@@ -180,7 +187,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \par\vspace{1.5\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   \vspace{0.1cm}
   }
-  \begin{textblock}{4.8}(0.9, 4.33)
+  \begin{textblock}{6}(1, 4.12)
   \begin{flushright}
   \obeycr
 }{%

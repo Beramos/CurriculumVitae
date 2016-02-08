@@ -4,23 +4,21 @@
 
 \begin{document}
 \header{Bram }{De Jaegher}
-       {Bioscience engineer}
-
-
-% In the aside, each new line forces a line break
+       {Bioscience engineer}{Curriculum}{Vitae}
+    % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
     Abelendreef 21
     8300 Knokke-Heist
     Belgium
     ~
-    \href{mailto:bram.de.jaegher@gmail.com}{adrien@friggeri.net}
-    \href{Moet nog weg}{http://friggeri.net}
-    \href{Moet nog weg}{fb://adrien}
+    %\href{mailto:bram.de.jaegher@gmail.com}{adrien@friggeri.net}
+    %\href{Moet nog weg}{http://friggeri.net}
+    %\href{Moet nog weg}{fb://adrien}
   \section{languages}
-    Dutch \textit{native language}
-    English \textit{C2: mastery}
-    French  \textit{B2: upper-intermediate}
+    Dutch: native language
+    English: C2 (CEFR)
+    French:  B1  (CEFR)
   \section{additional skills}
   Computational fluid dynamics
   Classical control theory 
@@ -33,8 +31,9 @@
   Python 2.7/3
   LaTeX
   R 
-  \textit{Basic knowledge}
-  HTML5/CSS
+  %\textit{Basic knowledge}
+  %HTML5/CSS
+  %c++
 \end{aside}
 \section{interests}
 \section{education}
@@ -63,7 +62,7 @@
 
 \begin{entrylist}
   \entry
-    {}
+    {02 2014}
     {LIP6/CNRS, Paris}
     {Research Internship.}
     {\emph{Visualization of complex networks.}}
@@ -97,9 +96,9 @@
   
 \end{entrylist}
 
-\section{projects}
+\section{voluntary work}
 
-Put your publications here!
+\Large \textbf{Mijn liefje is Epic!!!}
 
 %%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
 % 
