@@ -13,9 +13,9 @@
     8300 Knokke-Heist
     Belgium
     ~
-    \href{mailto:bram.de.jaegher@gmail.com}{adrien@friggeri.net}
-    %\href{Moet nog weg}{http://friggeri.net}
-    %\href{Moet nog weg}{fb://adrien}
+    \href{mailto:bram.de.jaegher@gmail.com}{bram.de.jaegher@gmail.com}
+    \href{http://be.linkedin.com/in/BramDeJaegher}{LinkedIn}
+    \href{https://github.com/Beramos}{Github}
   \section{languages}
     Dutch: native language
     English: C2 (CEFR)
@@ -32,9 +32,9 @@
   Python 2.7/3
   LaTeX
   R 
-  %\textit{Basic knowledge}
-  %HTML5/CSS
-  %c++
+  \textit{Basic knowledge}
+  HTML5/CSS
+  C++
 \end{aside}
 \section{interests}
 \section{education}
@@ -53,9 +53,9 @@
     Chemistry and Bioproces technology}
   \entry
     {2005-2011}
-    {Secundair onderwijs}
-    {}
-    {Specialization in mathematics and physics}
+    {GSCE in Math and Sciences}
+    {Royal Atheneum Knokke-Heist}
+    {4.3/5 GPA}
    
 \end{entrylist}
 
@@ -63,22 +63,10 @@
 
 \begin{entrylist}
   \entry
-    {02 2014}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
+    {08-09 2014}
+    {Research internship}
+    {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
     {\emph{Visualization of complex networks.}}
-  \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
- \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
- 
-    
 \end{entrylist}
 
 \section{scriptions}
@@ -86,21 +74,38 @@
 \begin{entrylist}
   \entry
     {2014}
-    {Bachelor thesis}
+    {Bachelor's thesis}
     {Ghent university}
-    {Innovative applications of artificial intelligence in the\\ foodstuffs sector}
+    {Innovative applications of artificial intelligence in the food industry}
   \entry
     {2016}
-    {Master thesis}
+    {Master's thesis}
     {Ghent university}
-    {Spatio temporal modelling of filter cake formation in \\ membrane bio reactors}
-  
+    {Spatio temporal modelling of filter cake formation in membrane bioreactors}
 \end{entrylist}
 
 \section{voluntary work}
-\section{varia}
-
-\Large \textbf{Mijn liefje is Epic!!!}
+\begin{entrylist}
+ \entry
+    {2009-2014}
+    {Leiding scoutsvereniging}
+    {Knokke-Heist}
+    {102\textsuperscript{e} FOS De Albatros}
+\end{entrylist} 
+\section{projects}
+\begin{entrylist}
+ \entry
+    {2015-...}
+    {Open Webslides}
+    {Ghent university}
+    {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals} \\ \href{http://openwebslides.github.io/}{Open Webslides Homepage}}
+ \entry
+    {2015-...}
+    {COCOON: communication \& co-creation online}
+    {Ghent university}
+    {Education innovation projects 2016}
+    
+\end{entrylist} 
 
 %%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
 % 
