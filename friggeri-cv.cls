@@ -166,7 +166,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{11.2cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -187,7 +187,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \par\vspace{1.5\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   \vspace{0.1cm}
   }
-  \begin{textblock}{6}(1, 4.12)
+  \begin{textblock}{7}(1, 4.12)
   \begin{flushright}
   \obeycr
 }{%
@@ -310,5 +310,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.75cm,top=2cm,right=1.5cm,bottom=2.5cm,head=4cm,nofoot]{geometry} %change the size of the content
 \RequirePackage{hyperref}
