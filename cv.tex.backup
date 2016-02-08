@@ -1,6 +1,7 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 \addbibresource{bibliography.bib}
+\hypersetup{colorlinks=false,allbordercolors=white}
 
 \begin{document}
 \header{Bram }{De Jaegher}
@@ -12,7 +13,7 @@
     8300 Knokke-Heist
     Belgium
     ~
-    %\href{mailto:bram.de.jaegher@gmail.com}{adrien@friggeri.net}
+    \href{mailto:bram.de.jaegher@gmail.com}{adrien@friggeri.net}
     %\href{Moet nog weg}{http://friggeri.net}
     %\href{Moet nog weg}{fb://adrien}
   \section{languages}
@@ -97,6 +98,7 @@
 \end{entrylist}
 
 \section{voluntary work}
+\section{varia}
 
 \Large \textbf{Mijn liefje is Epic!!!}
 
