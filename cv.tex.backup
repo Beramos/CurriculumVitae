@@ -21,7 +21,7 @@
   \section{languages}
     Dutch: native language
     English: C2 (CEFR)
-    French:  B1  (CEFR) B \vspace{3.3mm}
+    French:  B1  (CEFR) \vspace{3.3mm}
   \section{additional skills}
   Computational fluid dynamics
   Classical control theory 
@@ -40,6 +40,9 @@
   C++
 \end{aside}
 %\newgeometry{left=5cm}
+\vspace{3mm}
+\textbf{keywords:} mathematical modelling, process control, computational fluid dynamics, machine learning, optimisation, chemistry, problem solving
+\vspace{3mm}
 \section{education}
 \begin{entrylist}
     \entry
@@ -159,15 +162,14 @@
 \makeatother
 \begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=center}]
   %\node at (page cs:0.93,0.58) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,0.48) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,0.37) {\def\svgwidth{0.6cm} \input{linkIcon.pdf_tex}};
+  %\node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
   %\node at (page cs:0.93,-0.02) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,-.48) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,-0.58) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
-  
+  \node at (page cs:0.93,-.55) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,-0.65) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  \draw (page cs: -0.4,0.29) rectangle (page cs: 1,0.39); % hyperlink rectangles
+  \draw (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
 \end{tikzpicture}
-
-\textbf{Keywords:} Bioscience engineering, Mathematical Modelling, Process control, Computational fluid dynamics, Optimisatop,
 
 \end{document}
 %leeftijd geboortejaar
