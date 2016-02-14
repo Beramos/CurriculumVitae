@@ -2,8 +2,8 @@
 \documentclass[]{friggeri-cv}
 \addbibresource{bibliography.bib}
 \hypersetup{colorlinks=false,allbordercolors=white}
-
 \begin{document}
+
 \header{Bram }{De Jaegher}
        {Bioscience engineer}{Curriculum}{Vitae}
     % In the aside, each new line forces a line break
@@ -16,28 +16,30 @@
     \href{mailto:bram.de.jaegher@gmail.com}{bram.de.jaegher@gmail.com}
     \href{http://be.linkedin.com/in/BramDeJaegher}{LinkedIn}
     \href{https://github.com/Beramos}{Github}
+    ~
+    Driving licence: B \vspace{-0.8mm}
   \section{languages}
     Dutch: native language
     English: C2 (CEFR)
-    French:  B1  (CEFR)
+    French:  B1  (CEFR) B \vspace{3.3mm}
   \section{additional skills}
   Computational fluid dynamics
   Classical control theory 
   Modern control theory 
   Machine learning
-  MS office
-  \section{programming}
+  MS office \vspace{8mm}
+  \section{programming} 
   \textit{Working knowledge}
   MATLAB/Simulink
   Python 2.7/3
   LaTeX
-  R 
+  R \vspace{0.1cm}
   \textit{Basic knowledge}
+  OpenFOAM (CFD)
   HTML5/CSS
   C++
 \end{aside}
 %\newgeometry{left=5cm}
-\section{interests}
 \section{education}
 \begin{entrylist}
     \entry
@@ -45,21 +47,21 @@
     {M.Sc. (In progress)}
     {Ghent university}
     {Bioscience engineering\\
-    Chemistry and foodtechnology}
+    \emph{Chemistry and foodtechnology}}
   \entry
     {2011-2014}
     {B.Sc. cum laude}
     {Ghent university}
     {Bioscience engineering\\
-    Chemistry and Bioproces technology}
+    \emph{Chemistry and Bioproces technology}}
   \entry
     {2005-2011}
     {GSCE in Math and Sciences}
     {Royal Atheneum Knokke-Heist}
     {4.3/5 GPA}
    
-\end{entrylist}
 %\restoregeometry
+\end{entrylist}
 \section{experience}
 
 \begin{entrylist}
@@ -67,47 +69,59 @@
     {08-09/2014}
     {Research internship}
     {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
-    {\emph{Computer vision techniques for polymer recognition\\ on atomic-force microscopy images} \\ Ref:....}
+    {Computer vision techniques for polymer recognition\\ on atomic-force microscopy images}
 \end{entrylist}
 
 \section{scriptions}
 
 \begin{entrylist}
   \entry
-    {2014}
-    {Bachelor's thesis}
-    {Ghent university}
-    {Innovative applications of artificial intelligence in the food industry}
-  \entry
     {2016}
     {Master's thesis}
     {Ghent university}
-    {Spatio temporal modelling of filter cake formation in membrane bioreactors}
+    {Spatio temporal modelling of filter cake formation\\ in membrane bioreactors}
+  \entry
+    {2014}
+    {Bachelor's thesis}
+    {Ghent university}
+    {Innovative applications of artificial intelligence\\ in the food industry}
 \end{entrylist}
 
 \section{voluntary work}
 \begin{entrylist}
  \entry
     {2009-2014}
-    {Leader \textbf{scoutsvereniging:vertaling?!}}
+    {Leader youth movement}
     {Knokke-Heist}
     {102\textsuperscript{e} FOS De Albatros}
 \end{entrylist} 
 \section{projects}
 \begin{entrylist}
  \entry
-    {2015-...}
-    {Open Webslides}
-    {Ghent university}
-    {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals} \\ \href{http://openwebslides.github.io/}{Open Webslides Homepage}}
+ {2016}
+ {Open Webslides}
+ {}
+ {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals}}
  \entry
-    {2015-...}
-    {COCOON: communication \& co-creation online}
-    {Ghent university}
-    {Education innovation projects 2016}
-    
+ {2016}
+ {COCOON: communication \& co-creation online}
+ {Ghent university}
+ {Education innovation projects 2016}
+%  \begin{tabular*}{\textwidth}{l r}
+%   \textbf{Open Webslides} \\
+%     Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals} & % \href{http://openwebslides.github.io/}{Open Webslides Homepage}
+%   \end{tabular*} \\ \\
+% 
+%  \begin{tabular*}{\textwidth}{l r}
+%   \textbf{COCOON: communication \& co-creation online} \\
+%    Education innovation projects 2016 \emph{(Ghent university)} %\href{http://openwebslides.github.io/}{Open Webslides Homepage}
+%   \end{tabular*} \\ \\
+ 
+   
+%\section{interests}
 \end{entrylist} 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
 % 
 %\printbibsection{article}{article in peer-reviewed journal}
@@ -121,5 +135,39 @@
 %\end{refsection}
 %\printbibsection{misc}{other publications}
 %\printbibsection{report}{research reports}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%hyperlink images
+\makeatletter
+\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
+\tikzdeclarecoordinatesystem{page}{
+    \parsecomma#1\endparsecomma
+    \pgfpointanchor{current page}{north east}
+    % Save the upper right corner
+    \pgf@xc=\pgf@x%
+    \pgf@yc=\pgf@y%
+    % save the lower left corner
+    \pgfpointanchor{current page}{south west}
+    \pgf@xb=\pgf@x%
+    \pgf@yb=\pgf@y%
+    % Transform to the correct placement
+    \pgfmathparse{(\pgf@xc-\pgf@xb)/2.*\page@x+(\pgf@xc+\pgf@xb)/2.}
+    \expandafter\pgf@x\expandafter=\pgfmathresult pt
+    \pgfmathparse{(\pgf@yc-\pgf@yb)/2.*\page@y+(\pgf@yc+\pgf@yb)/2.}
+    \expandafter\pgf@y\expandafter=\pgfmathresult pt
+}
+\makeatother
+\begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=center}]
+  %\node at (page cs:0.93,0.58) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,0.48) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  %\node at (page cs:0.93,-0.02) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,-.48) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,-0.58) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
+  
+\end{tikzpicture}
+
+\textbf{Keywords:} mathematical modelling, process control, computational fluid dynamics, optimisation, chemistry, problem solving
 
 \end{document}
+%leeftijd geboortejaar
