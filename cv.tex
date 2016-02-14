@@ -1,7 +1,11 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 \addbibresource{bibliography.bib}
-\hypersetup{colorlinks=false,allbordercolors=white}
+\hypersetup{    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black,}
 \begin{document}
 
 \header{Bram }{De Jaegher}
@@ -160,17 +164,17 @@
     \expandafter\pgf@y\expandafter=\pgfmathresult pt
 }
 \makeatother
-\begin{tikzpicture}[remember picture,overlay,every node/.style={anchor=center}]
+\begin{tikzpicture}[remember picture,overlay ,every node/.style={anchor=center}]
   %\node at (page cs:0.93,0.58) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,0.37) {\def\svgwidth{0.6cm} \input{linkIcon.pdf_tex}};
+  \node at (page cs:0.93,0.37) {\hyperlink{bla.com}{{\def\svgwidth{0.6cm} \input{linkIcon.pdf_tex}}}};
   %\node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
   %\node at (page cs:0.93,-0.02) {\def\svgwidth{0.7cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,-.55) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
-  \node at (page cs:0.93,-0.65) {\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}};
-  \draw (page cs: -0.4,0.29) rectangle (page cs: 1,0.39); % hyperlink rectangles
-  \draw (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
-  \draw (page cs: -0.4,-0.53) rectangle (page cs: 1,-0.63); % hyperlink rectangles
-  \draw (page cs: -0.4,-0.63) rectangle (page cs: 1,-0.73); % hyperlink rectangles
+  \node at (page cs:0.93,-.55) {\hyperlink{bla.com}{{\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}}}};
+  \node at (page cs:0.93,-0.65) {\hyperlink{bla.com}{{\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}}}};
+  \draw[fill=white, opacity=0] (page cs: -0.4,0.29) rectangle (page cs: 1,0.39); % hyperlink rectangles
+  \draw[fill=white, opacity=0] (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
+  \href{t1}{\draw[fill=white, opacity=0] (page cs: -0.4,-0.53) rectangle (page cs: 1,-0.63);} % hyperlink rectangles
+  \draw[fill=white, opacity=0] (page cs: -0.4,-0.63) rectangle (page cs: 1,-0.73); % hyperlink rectangles
 \end{tikzpicture}
 
 \end{document}
