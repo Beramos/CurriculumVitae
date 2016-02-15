@@ -49,6 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.44678908)%
-    \put(0,0){\includegraphics[width=\unitlength]{linkIcon.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength]{../figs/linkIcon.pdf}}%
   \end{picture}%
 \endgroup%

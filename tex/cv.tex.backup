@@ -1,0 +1,184 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\addbibresource{bib/bibliography.bib}
+\hypersetup{    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black,}
+\begin{document}
+
+\header{Bram }{De Jaegher}
+       {Bioscience engineer: chemistry and bioprocess technology}{Curriculum}{Vitae}
+    % In the aside, each new line forces a line break
+\begin{aside}
+  \section{about}
+    Abelendreef 21
+    8300 Knokke-Heist
+    Belgium
+    ~
+    \href{mailto:bram.de.jaegher@gmail.com}{bram.de.jaegher@gmail.com}
+    \href{http://be.linkedin.com/in/BramDeJaegher}{LinkedIn}
+    \href{https://github.com/Beramos}{Github}
+    ~
+    Driving licence: B \vspace{-0.8mm}
+  \section{languages}
+    Dutch: native language
+    English: C2 (CEFR)
+    French:  B1  (CEFR) \vspace{3.3mm}
+  \section{additional skills}
+  Computational fluid dynamics
+  Classical control theory 
+  Modern control theory 
+  Machine learning
+  MS office \vspace{8mm}
+  \section{programming} 
+  \textit{Working knowledge}
+  MATLAB/Simulink
+  Python 2.7/3
+  LaTeX
+  R \vspace{0.1cm}
+  \textit{Basic knowledge}
+  OpenFOAM (CFD)
+  HTML5/CSS
+  C++
+\end{aside}
+%\newgeometry{left=5cm}
+\vspace{3mm}
+\textbf{keywords:} mathematical modelling, process control, computational fluid dynamics, machine learning, optimisation, chemistry, problem solving
+\vspace{3mm}
+\section{education}
+\begin{entrylist}
+    \entry
+    {2014–2016}
+    {M.Sc. (In progress)}
+    {Ghent university}
+    {Bioscience engineering\\
+    \emph{Chemistry and foodtechnology}}
+  \entry
+    {2011-2014}
+    {B.Sc. cum laude}
+    {Ghent university}
+    {Bioscience engineering\\
+    \emph{Chemistry and Bioproces technology}}
+  \entry
+    {2005-2011}
+    {GSCE in Math and Sciences}
+    {Royal Atheneum Knokke-Heist}
+    {4.2/5 GPA}
+   
+%\restoregeometry
+\end{entrylist}
+\section{experience}
+
+\begin{entrylist}
+  \entry
+    {08-09/2014}
+    {Research internship}
+    {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
+    {Computer vision techniques for polymer recognition\\ on atomic-force microscopy images}
+\end{entrylist}
+
+\section{scriptions}
+
+\begin{entrylist}
+  \entry
+    {2016}
+    {Master's thesis}
+    {Ghent university}
+    {Spatio temporal modelling of filter cake formation\\ in membrane bioreactors}
+  \entry
+    {2014}
+    {Bachelor's thesis}
+    {Ghent university}
+    {Innovative applications of artificial intelligence\\ in the food industry}
+\end{entrylist}
+
+\section{voluntary work}
+\begin{entrylist}
+ \entry
+    {2009-2014}
+    {Leader youth movement}
+    {Knokke-Heist}
+    {102\textsuperscript{e} FOS De Albatros}
+\end{entrylist} 
+\section{projects}
+\begin{entrylist}
+ \entry
+ {2016}
+ {Open Webslides}
+ {}
+ {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals}}
+ \entry
+ {2016}
+ {COCOON: communication \& co-creation online}
+ {Ghent university}
+ {Education innovation projects 2016}
+%  \begin{tabular*}{\textwidth}{l r}
+%   \textbf{Open Webslides} \\
+%     Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge finals} & % \href{http://openwebslides.github.io/}{Open Webslides Homepage}
+%   \end{tabular*} \\ \\
+% 
+%  \begin{tabular*}{\textwidth}{l r}
+%   \textbf{COCOON: communication \& co-creation online} \\
+%    Education innovation projects 2016 \emph{(Ghent university)} %\href{http://openwebslides.github.io/}{Open Webslides Homepage}
+%   \end{tabular*} \\ \\
+ 
+   
+%\section{interests}
+\end{entrylist} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%% Hyperlinks images %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
+\tikzdeclarecoordinatesystem{page}{
+    \parsecomma#1\endparsecomma
+    \pgfpointanchor{current page}{north east}
+    % Save the upper right corner
+    \pgf@xc=\pgf@x%
+    \pgf@yc=\pgf@y%
+    % save the lower left corner
+    \pgfpointanchor{current page}{south west}
+    \pgf@xb=\pgf@x%
+    \pgf@yb=\pgf@y%
+    % Transform to the correct placement
+    \pgfmathparse{(\pgf@xc-\pgf@xb)/2.*\page@x+(\pgf@xc+\pgf@xb)/2.}
+    \expandafter\pgf@x\expandafter=\pgfmathresult pt
+    \pgfmathparse{(\pgf@yc-\pgf@yb)/2.*\page@y+(\pgf@yc+\pgf@yb)/2.}
+    \expandafter\pgf@y\expandafter=\pgfmathresult pt
+}
+\makeatother
+
+\begin{tikzpicture}[remember picture,overlay ,every node/.style={anchor=center}]
+  %\node at (page cs:0.93,0.58) {\def\svgwidth{0.7cm}\input{figs/linkIcon.pdf_tex}};
+  \node at (page cs:0.93,0.37) {\href{https://onedrive.live.com/redir?resid=5CDFA628126F603B!29160&authkey=!ABDCH5rjVCxCmHk&ithint=file\%2cpdf}{{\def\svgwidth{0.6cm} \input{linkIcon.pdf_tex}}}};
+  %\node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{figs/linkIcon.pdf_tex}};
+  %\node at (page cs:0.93,-0.02) {\def\svgwidth{0.7cm}\input{figs/linkIcon.pdf_tex}};
+  \node at (page cs:0.93,-.55) {\href{http://openwebslides.github.io/}{{\def\svgwidth{0.6cm}\input{figs/linkIcon.pdf_tex}}}};
+  \node at (page cs:0.93,-0.65) {\href{https://onedrive.live.com/redir?resid=5CDFA628126F603B!29161&authkey=!ACawR7M68HlJ0SE&ithint=file\%2cpdf}{{\def\svgwidth{0.6cm}\input{linkIcon.pdf_tex}}}};
+  \draw[fill=white, opacity=0] (page cs: -0.4,0.29) rectangle (page cs: 1,0.39); % hyperlink rectangles
+  \draw[fill=white, opacity=0] (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
+  \href{t1}{\draw[fill=white, opacity=0] (page cs: -0.4,-0.53) rectangle (page cs: 1,-0.63);} % hyperlink rectangles
+  \draw[fill=white, opacity=0] (page cs: -0.4,-0.63) rectangle (page cs: 1,-0.73); % hyperlink rectangles
+\end{tikzpicture}
+
+\end{document}
+%leeftijd geboortejaar
