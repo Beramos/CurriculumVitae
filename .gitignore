@@ -1,0 +1,8 @@
+# extensions to ignore #
+########################
+
+*.bcf
+*.log
+*.out
+*.run.xml
+

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2015.8.25)  15 FEB 2016 00:42
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2015.8.25)  15 FEB 2016 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,7 +1254,7 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 Here is how much of TeX's memory you used:
  38419 strings out of 493918
  705374 string characters out of 6150563
- 1087759 words of memory out of 5000000
+ 1087761 words of memory out of 5000000
  41261 multiletter control sequences out of 15000+600000
  4256 words of font info for 47 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
