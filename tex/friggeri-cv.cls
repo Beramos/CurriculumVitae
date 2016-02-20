@@ -28,7 +28,6 @@
 \definecolor{blue}{HTML}{6CE0F1}
 
 \ifdefined\@cv@print
-  \colorlet{green}{gray}
   \colorlet{orange}{gray}
   \colorlet{purple}{gray}
   \colorlet{red}{gray}
@@ -45,18 +44,6 @@
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
-
-% \RequirePackage[quiet]{fontspec}
-% \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-% 
-% \newfontfamily\bodyfont[]{Helvetica Neue}
-% \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-% \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
-% 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-% 
-% \setmathfont{XITS Math}
 
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
@@ -81,6 +68,18 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \setmathfont{texgyreheros-regular.otf}
 %%%
+
+%%%%%%%%%%%%%%%%%%%%
+% Dotted underline % 
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\udensdot}[1]{%
+    \tikz[baseline=(todotted.base)]{
+        \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
+        \draw[densely dotted, green,line width=1.25pt] (todotted.south west) -- (todotted.south east);
+    }%
+}%
+
 
 %%%%%%%%%%
 % Header %
@@ -195,6 +194,9 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \end{textblock}
   \let\section\oldsection
 }
+\newcommand{\linkBlock}[1]{\udensdot{\addfontfeature{Color=gray} #1}}
+
+
 
 %%%%%%%%%%%%%%%%
 % Bibliography %
