@@ -110,28 +110,8 @@
  {COCOON: communication \& co-creation online}
  {Ghent University}
  {Education innovation projects 2016}
-  
-\end{entrylist} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
-% 
-%\printbibsection{article}{article in peer-reviewed journal}
-%\begin{refsection}
-%  \nocite{*}
-%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-%\end{refsection}
-%\begin{refsection}
-%  \nocite{*}
-%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-%\end{refsection}
-%\printbibsection{misc}{other publications}
-%\printbibsection{report}{research reports}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%% Hyperlinks images %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{entrylist}
+%%%%% Hyperlinks images %%%%%
 \makeatletter
 \def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
 \tikzdeclarecoordinatesystem{page}{
@@ -163,6 +143,8 @@
   \draw[fill=white, opacity=0] (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
   \href{t1}{\draw[fill=white, opacity=0] (page cs: -0.4,-0.53) rectangle (page cs: 1,-0.63);} % hyperlink rectangles
   \draw[fill=white, opacity=0] (page cs: -0.4,-0.63) rectangle (page cs: 1,-0.73); % hyperlink rectangles
+  \node at (page cs:0.66,-0.9) {\small References available on request};
+  
 \end{tikzpicture}
 
 \end{document}
