@@ -67,19 +67,19 @@
 \section{experience}
 \begin{entrylist}
   \entry
-    {01/2017 - Now}
+    {01/2017 - ...}
     {PhD candidate}
     {Ghent University}
-    {Model-based optimisation of design and operation of bioreactors with a focus on gas-liquid mass transfer}
+    {Model-based optimisation of design and operation of bioreactors with a focus on gas-liquid mass transfer \\ \textit{BIOMATH}}
+    \entry
+    {09-12/2016}
+    {Research assistant}
+    {Ghent University}
+    {Mathematical modelling of filtercake formation and fungal growth \\{\textit{BIOMATH/KERMIT}}}
     \entry
     {08-09/2014}
     {Research internship}
-    {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
-    {Computer vision techniques for polymer recognition\\ using atomic-force microscopy images}
-    \entry
-    {08-09/2014}
-    {Research internship}
-    {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
+    {University of S\~{a}o Paulo}
     {Computer vision techniques for polymer recognition\\ using atomic-force microscopy images}
 \end{entrylist}
 
@@ -89,7 +89,7 @@
     {2016}
     {Master thesis}
     {Ghent University}
-    {Spatio temporal modelling of filter cake formation\\ in filtration processes}
+    {Spatio temporal modelling of filtercake formation\\ in filtration processes}
   \entry
     {2014}
     {Bachelor thesis}
@@ -105,6 +105,7 @@
     {Knokke-Heist}
     {102\textsuperscript{e} FOS De Albatros}
 \end{entrylist} 
+   \clearpage
 \section{projects}
 \begin{entrylist}
  \entry
@@ -114,45 +115,22 @@
  {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge winner}}
  \entry
  {2016}
- {COCOON: communication \& co-creation online}
- {Ghent University}
- {Education innovation projects 2016}
+ {Dewpal: biocatalysed atmospheric condenstation}
+ {MIT, Boston}
+ {iGem: International Genetically Engineered Machine \\Competition}
 \end{entrylist}
-%%%%% Hyperlinks images %%%%%
-\makeatletter
-\def\parsecomma#1,#2\endparsecomma{\def\page@x{#1}\def\page@y{#2}}
-\tikzdeclarecoordinatesystem{page}{
-    \parsecomma#1\endparsecomma
-    \pgfpointanchor{current page}{north east}
-    % Save the upper right corner
-    \pgf@xc=\pgf@x%
-    \pgf@yc=\pgf@y%
-    % save the lower left corner
-    \pgfpointanchor{current page}{south west}
-    \pgf@xb=\pgf@x%
-    \pgf@yb=\pgf@y%
-    % Transform to the correct placement
-    \pgfmathparse{(\pgf@xc-\pgf@xb)/2.*\page@x+(\pgf@xc+\pgf@xb)/2.}
-    \expandafter\pgf@x\expandafter=\pgfmathresult pt
-    \pgfmathparse{(\pgf@yc-\pgf@yb)/2.*\page@y+(\pgf@yc+\pgf@yb)/2.}
-    \expandafter\pgf@y\expandafter=\pgfmathresult pt
-}
-\makeatother
 
-\begin{tikzpicture}[remember picture,overlay ,every node/.style={anchor=center}]
-  %\node at (page cs:0.93,0.58) {\def\svgwidth{0.7cm}\input{figs/linkIcon.pdf_tex}};
-  \node at (page cs:0.93,0.37) {\href{https://onedrive.live.com/redir?resid=5CDFA628126F603B!29160&authkey=!ABDCH5rjVCxCmHk&ithint=file\%2cpdf}{{\def\svgwidth{0.5cm} \input{../figs/linkIcon.pdf_tex}}}};
-  %\node at (page cs:0.93,0.02) {\def\svgwidth{0.6cm}\input{figs/linkIcon.pdf_tex}};
-  %\node at (page cs:-0.93,0.32) {\def\svgwidth{0.5cm}\input{../figs/linkIcon.pdf_tex}};
-  \node at (page cs:0.93,-.55) {\href{http://openwebslides.github.io/}{{\def\svgwidth{0.5cm}\input{../figs/linkIcon.pdf_tex}}}};
-  \node at (page cs:0.93,-0.65) {\href{https://onedrive.live.com/redir?resid=5CDFA628126F603B!29161&authkey=!ACawR7M68HlJ0SE&ithint=file\%2cpdf}{{\def\svgwidth{0.5cm}\input{../figs/linkIcon.pdf_tex}}}};
-  \draw[fill=white, opacity=0] (page cs: -0.4,0.29) rectangle (page cs: 1,0.39); % hyperlink rectangles
-  \draw[fill=white, opacity=0] (page cs: -0.4,0.39) rectangle (page cs: 1,0.49); % hyperlink rectangles
-  \href{t1}{\draw[fill=white, opacity=0] (page cs: -0.4,-0.53) rectangle (page cs: 1,-0.63);} % hyperlink rectangles
-  \draw[fill=white, opacity=0] (page cs: -0.4,-0.63) rectangle (page cs: 1,-0.73); % hyperlink rectangles
-  \node at (page cs:0.66,-0.9) {\small References available on request};
-  
-\end{tikzpicture}
+% \begin{tikzpicture}[remember picture,overlay ,every node/.style={anchor=center}]
+%   \node at (page cs:0.66,-0.9) {\small References available on request}; 
+% \end{tikzpicture}
+
+\begin{tikzpicture}[overlay]
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
+    \node [rectangle, anchor=center, minimum width=0.5\paperwidth, minimum height=3cm] (box3) at (box.west){};
+    \node [anchor=center] (CV) at (box3) {%
+      \fontsize{35pt}{72pt}\color{green}%
+      {\hspace{10cm} \thinfont Curriculum Vitae}};
+  \end{tikzpicture}
 
 \end{document}
-%leeftijd geboortejaar
+
