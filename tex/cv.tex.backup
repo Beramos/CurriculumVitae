@@ -27,12 +27,12 @@
   Computational fluid dynamics
   Mathematical modelling
   Machine learning
-  Control theory   \vspace{3.3mm}
+  Control theory 
+  LaTeX \vspace{3.3mm}
   \section{programming} 
   \textit{Working knowledge}
   MATLAB/Simulink
   Python 2/3
-  LaTeX
   OpenFOAM (CFD) \vspace{0.15cm}
   \textit{Basic knowledge}
   HTML/CSS/JS
@@ -67,6 +67,16 @@
 \section{experience}
 \begin{entrylist}
   \entry
+    {01/2017 - Now}
+    {PhD candidate}
+    {Ghent University}
+    {Model-based optimisation of design and operation of bioreactors with a focus on gas-liquid mass transfer}
+    \entry
+    {08-09/2014}
+    {Research internship}
+    {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
+    {Computer vision techniques for polymer recognition\\ using atomic-force microscopy images}
+    \entry
     {08-09/2014}
     {Research internship}
     {S\~{a}o Carlos Institute of Physics - University of S\~{a}o Paulo}
