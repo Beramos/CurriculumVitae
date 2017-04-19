@@ -10,12 +10,10 @@
 
 \header{Bram }{De Jaegher}
        {Bioscience engineer}{Curriculum}{Vitae}
-  \vspace{5cm} \linkBlock{\href{http://bramdejaegher.be/CV.html}{My dynamic and interactive CV is available on: bramdejaegher.be/CV.html}}
  \begin{aside}
-  \section{about}
+  \vspace{0.52cm}\section{about}
     9000 Gent
     Belgium \vspace{0.21cm}
-    +...
     \linkBlock{\href{mailto:bram.de.jaegher@gmail.com}{bram.de.jaegher@gmail.com}}
     \linkBlock{\href{http://be.linkedin.com/in/BramDeJaegher}{LinkedIn}}
     \linkBlock{\href{https://github.com/Beramos}{Github}} \vspace{0.21cm}
@@ -40,8 +38,9 @@
   C++
   R
 \end{aside}
+{\hspace{-6cm} \href{http://bramdejaegher.be/CV.html}{\textbf{Please take a look at my new and interactive CV:} \linkBlock{bramdejaegher.be/CV.html}} \vspace{3mm}}
 \vspace{3mm}
-\textbf{keywords:} mathematical modelling, process control, computational fluid dynamics, machine learning, optimisation, chemistry, problem solving
+{\textbf{keywords:} mathematical modelling, process control, computational fluid dynamics, machine learning, optimisation, chemistry, problem solving}
 \vspace{3mm}
 
 \section{education}
@@ -108,7 +107,7 @@
 \end{entrylist} 
    \clearpage
    
-\begin{tikzpicture}[overlay]
+\begin{tikzpicture}[overlay] %if this dissepears run with [remember picture, overlay] and then with [overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
     \node [rectangle, anchor=center, minimum width=0.5\paperwidth, minimum height=3cm] (box3) at (box.west){};
     \node [anchor=center] (CV) at (box3) {%
