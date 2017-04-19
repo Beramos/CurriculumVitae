@@ -1,0 +1,131 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\addbibresource{bib/bibliography.bib}
+\hypersetup{    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black,}
+\begin{document}
+
+\header{Bram }{De Jaegher}
+       {Bioscience engineer}{Curriculum}{Vitae}
+ \begin{aside}
+  \vspace{0.6cm}\section{about}
+    9000 Gent
+    Belgium \vspace{0.21cm}
+    \linkBlock{\href{mailto:bram.de.jaegher@gmail.com}{bram.de.jaegher@gmail.com}}
+    \linkBlock{\href{http://be.linkedin.com/in/BramDeJaegher}{LinkedIn}}
+    \linkBlock{\href{https://github.com/Beramos}{Github}} \vspace{0.21cm}
+    Driver's licence: B \vspace{-1.25mm}
+  \section{languages}
+    Dutch: native language
+    English: C2 (CEFR)
+    French:  B1  (CEFR) \vspace{3.3mm}
+  \section{additional skills}
+  Computational fluid dynamics
+  Mathematical modelling
+  Machine learning
+  Control theory 
+  LaTeX \vspace{3.3mm}
+  \section{programming} 
+  \textit{Working knowledge}
+  MATLAB/Simulink
+  Python 2/3
+  OpenFOAM (CFD) \vspace{0.15cm}
+  \textit{Basic knowledge}
+  HTML/CSS/JS
+  C++
+  R
+\end{aside}
+{\hspace{-6cm} \href{http://bramdejaegher.be/CV.html}{\textbf{Please take a look at my new and interactive CV:} \linkBlock{bramdejaegher.be/CV.html}}\\ \\}
+{\textbf{keywords:} mathematical modelling, process control, computational fluid dynamics,\\ machine learning, optimisation, chemistry, problem solving}
+\vspace{3mm}
+\section{education}
+\begin{entrylist}
+    \entry
+    {2014–2016}
+    {M.Sc. summa cum laude}
+    {Ghent University}
+    {Bioscience engineering\\
+    \emph{Chemistry and bioprocess technology}}
+  \entry
+    {2011-2014}
+    {B.Sc. cum laude}
+    {Ghent University}
+    {Bioscience engineering\\
+    \emph{Chemistry and food technology}}
+  \entry
+    {2005-2011}
+    {GCSE in Math and Sciences}
+    {Royal Atheneum Knokke-Heist}
+    {4.2/5 GPA}
+\end{entrylist}
+
+\section{experience}
+\begin{entrylist}
+  \entry
+    {01/2017 - ...}
+    {PhD candidate}
+    {Ghent University}
+    {Model-based optimisation of design and operation of bioreactors with a focus on gas-liquid mass transfer \\ \textit{BIOMATH}}
+    \entry
+    {09-12/2016}
+    {Research assistant}
+    {Ghent University}
+    {Mathematical modelling of filtercake formation and fungal growth \\{\textit{BIOMATH/KERMIT}}}
+    \entry
+    {08-09/2014}
+    {Research internship}
+    {University of S\~{a}o Paulo}
+    {Computer vision techniques for polymer recognition\\ using atomic-force microscopy images}
+\end{entrylist}
+
+\section{scriptions}
+\begin{entrylist}
+  \entry
+    {2016}
+    {Master thesis}
+    {Ghent University}
+    {Spatio temporal modelling of filtercake formation\\ in filtration processes}
+  \entry
+    {2014}
+    {Bachelor thesis}
+    {Ghent University}
+    {Innovative applications of artificial intelligence\\ in the food industry}
+\end{entrylist}
+
+\section{voluntary work}
+\begin{entrylist}
+ \entry
+    {2009-2014}
+    {Leader youth movement}
+    {Knokke-Heist}
+    {102\textsuperscript{e} FOS De Albatros}
+\end{entrylist} 
+   \clearpage
+   
+\begin{tikzpicture}[overlay] %if this dissepears run with [remember picture, overlay] and then with [overlay]
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.5cm] (box) at (current page.north){};
+    \node [rectangle, anchor=center, minimum width=0.5\paperwidth, minimum height=3cm] (box3) at (box.west){};
+    \node [anchor=center] (CV) at (box3) {%
+      \fontsize{35pt}{72pt}\color{green}%
+      {\hspace{10cm} \thinfont Curriculum Vitae}}; 
+ \end{tikzpicture}
+
+\vspace{0.5cm} \section{projects}
+\begin{entrylist}
+ \entry
+ {2016}
+ {Open Webslides}
+ {Ghent University}
+ {Open-source platform for interactive presentation slides \\ \emph{UGent innoversity challenge winner}}
+ \entry
+ {2016}
+ {Dewpal: biocatalysed atmospheric condenstation}
+ {MIT, Boston}
+ {iGem: International Genetically Engineered Machine \\Competition}
+\end{entrylist}
+
+\end{document}
+
