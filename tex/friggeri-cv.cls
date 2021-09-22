@@ -95,17 +95,17 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[5]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
-    \node [rectangle, fill=fillheader,anchor=east, minimum width=0.6\paperwidth, minimum height=4cm] (box4) at (box.east){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.8cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader,anchor=east, minimum width=0.6\paperwidth, minimum height=3.8cm] (box4) at (box.east){};
     \node [anchor=center] (name) at (box4) {%
-      \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      \fontsize{32pt}{72pt}\color{header}%
+      {\thinfont #1}{\hspace{3mm}\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
       \thinfont #3%
     };
-    \node [rectangle, anchor=north west, minimum width=0.4\paperwidth, minimum height=1.7cm] (box2) at (current page.north west){};
+    \node [rectangle, anchor=north west, minimum width=0.4\paperwidth, minimum height=1.3cm] (box2) at (current page.north west){};
     \node [rectangle, anchor=north west, minimum width=0.3\paperwidth, minimum height=2cm] (box3) at (box.west){};
     \node [anchor=north] (CV) at (box2) {%
       \fontsize{35pt}{72pt}\color{green}%
@@ -114,7 +114,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
       \fontsize{35pt}{72pt}\color{green}%
       {\thinfont #5}};
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{2cm}
   \vspace{-2\parskip}
 }
 
