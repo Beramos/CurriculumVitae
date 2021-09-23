@@ -95,8 +95,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[5]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.8cm] (box) at (current page.north){};
-    \node [rectangle, fill=fillheader,anchor=east, minimum width=0.6\paperwidth, minimum height=3.8cm] (box4) at (box.east){};
+    \node [rectangle, fill=fillheader, anchor=north, xshift=1mm, minimum width=1.02\paperwidth, minimum height=3.5cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader,anchor=east, minimum width=0.6\paperwidth, minimum height=3.5cm] (box4) at (box.east){};
     \node [anchor=center] (name) at (box4) {%
       \fontsize{32pt}{72pt}\color{header}%
       {\thinfont #1}{\hspace{3mm}\bodyfont  #2}
